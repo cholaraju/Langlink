@@ -50,7 +50,6 @@ model Transactions {
   status     Int      @db.SmallInt
   created_at DateTime @default(now())
 
-
   @@map("transactions")
 }
 
@@ -62,5 +61,5 @@ model CoinSpend {
   summary_id String   @db.Uuid
   created_at DateTime @default(now())
 
-  @@map("coinst_spend")
+  @@map("coins_spend")
 }

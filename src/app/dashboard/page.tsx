@@ -13,7 +13,7 @@ export default async function page() {
   return (
     <div className='container'>
         <DashNav user={session?.user!} userCoins={userCoins}/>
-        <UrlInput />
+        <UrlInput user={session?.user!}/>
     </div>
   )
 }
