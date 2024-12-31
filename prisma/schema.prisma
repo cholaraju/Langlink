@@ -29,6 +29,7 @@ model User {
   @@map("users")
 }
 
+
 model Summary {
   id         String      @id @default(uuid()) @db.Uuid
   user_id    Int
@@ -41,6 +42,8 @@ model Summary {
 
   @@map("summary")
 }
+
+
 
 model Transactions {
   id         String   @id @default(uuid()) @db.Uuid
